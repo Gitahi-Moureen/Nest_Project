@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/regist.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Login</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <form id="login-form" class="form">
+            <div class="form-control">
+                <label for="username"><b>Email</b></label>
+                <input type="email" placeholder="gitahi@gmail.com" id="email" />
+
+            </div>
+            <br>
+            <br>
+            <div class="form-control">
+                <label for="username"><b>Password</b></label>
+                <input type="password" placeholder="*********" id="password"/>
+
+            <!-- </div>
+           <div class="auth-providers">
+            <a href="#" id="google-signin-btn">
+                <img src="/Images/goo.png" alt="Google Logo" height="38">
+                Sign in with Google
+               
+            </a> -->
+            <!-- <a href="#" id="facebook-signin-btn">
+                <img src="/Images/facebook.jpeg" alt="Facebook Logo" height="50">
+                Sign in with Facebook
+            </a> -->
+           </div>
+           <br>
+           <br>
+
+           <button><a href="/index.html"><b>Login</b></a></button>
+           <br>
+           <br>
+           <br>
+           <div class="auth-providers">
+            <a href="#" id="google-signin-btn">
+                <img src="/Images/goo.png" alt="Google Logo" height="38">  
+                
+            </a>
+            <a href="#" id="facebook-signin-btn">
+                <img src="/Images/facebook.jpeg" alt="Facebook Logo" height="42">
+               
+            </a>
+           </div>
+
+           <div id="check-account">
+            
+           <p><b>Don't have an Account?</b><a href="/signup.html"><b style="color: blueviolet;"> Sign Up</b></a></p>
+        </div>
+        </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script>      
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+  apiKey: "AIzaSyBiI-xI43Dcwh7z2NVf1qq2momiLu94Xmg",
+  authDomain: "nest-project-d94e0.firebaseapp.com",
+  projectId: "nest-project-d94e0",
+  storageBucket: "nest-project-d94e0.appspot.com",
+  messagingSenderId: "890482460597",
+  appId: "1:890482460597:web:48a40ee317f7b13b433bfc",
+  measurementId: "G-L039555WVW"
+};
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="/login.js"></script>
+    
+</body>
+</html>
